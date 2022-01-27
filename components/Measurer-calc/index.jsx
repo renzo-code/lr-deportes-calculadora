@@ -161,39 +161,39 @@ const MeasurerCalc = ({ table, setTable }) => {
       //bloquea boton vacios las casillas
       // setError13(false)
       // setError14(false)
-      // setError15(false)
-      // setError16(false)
+      setError16(false)
+      setError15(false)
       setError17(false)
       setError18(false)
-
+      
       setErrorColor14(false)
       setErrorColor15(false)
       setErrorColor16(false)
       setErrorColor17(false)
       setErrorColor18(false)
-    }
-    if (n === 15){
-      setBtnDisabled15(true)
-      setColorBtn15('red')
-    }
-    else if (n === 16){
-      setBtnDisabled16(true)
-      setColorBtn16('red')
-    }
-    else if (n === 17){
-      setBtnDisabled17(true)
-      setColorBtn17('red')
-    }
-    else if (n === 18){
-      setBtnDisabled18(true)
-      setColorBtn18('red')
-    }
 
-    
-    f.filter(item => item.score1.length > 0 && item.score2.length > 0)
-    .forEach((item, i) => {
-      validatedVs(item)
-    })
+      if (n === 15){
+        setBtnDisabled15(true)
+        setColorBtn15('red')
+      }
+      else if (n === 16){
+        setBtnDisabled16(true)
+        setColorBtn16('red')
+      }
+      else if (n === 17){
+        setBtnDisabled17(true)
+        setColorBtn17('red')
+      }
+      else if (n === 18){
+        setBtnDisabled18(true)
+        setColorBtn18('red')
+      }
+      
+      f.filter(item => item.score1.length > 0 && item.score2.length > 0)
+      .forEach((item, i) => {
+        validatedVs(item)
+      })
+    }
   }
 
   const MostrarDataFecha = (number) => {
@@ -242,7 +242,6 @@ const MeasurerCalc = ({ table, setTable }) => {
               />
             })
           }
-          {console.log('btnDisabled14', btnDisabled14)}
           {errorColor14 && <ButtonCalc colorBtn={colorBtn14} onClick={() => { CalcPoints(fecha14) }} />}
           {!errorColor14 && <ButtonCalc colorBtn={colorBtn14} disabled={btnDisabled14} onClick={() => { CalcPoints(fecha14, 14) }} />}
           {error14 && <TextError>Complete todos los espacios.</TextError>}
@@ -267,7 +266,6 @@ const MeasurerCalc = ({ table, setTable }) => {
               />
             })
           }
-          {console.log('btnDisabled15', btnDisabled15)}
           {errorColor15 && <ButtonCalc colorBtn={colorBtn15} onClick={() => { CalcPoints(fecha15) }} />}
           {!errorColor15 && <ButtonCalc colorBtn={colorBtn15} disabled={btnDisabled15} onClick={() => { CalcPoints(fecha15, 15) }} />}
           {error15 && <TextError>Complete todos los espacios.</TextError>}
@@ -292,7 +290,6 @@ const MeasurerCalc = ({ table, setTable }) => {
               />
             })
           }
-          {console.log('btnDisabled16', btnDisabled16)}
           {errorColor16 && <ButtonCalc colorBtn={colorBtn16} onClick={() => { CalcPoints(fecha16) }} />}
           {!errorColor16 && <ButtonCalc colorBtn={colorBtn16} disabled={btnDisabled16} onClick={() => { CalcPoints(fecha16, 16) }} />}
           {error16 && <TextError>Complete todos los espacios.</TextError>}

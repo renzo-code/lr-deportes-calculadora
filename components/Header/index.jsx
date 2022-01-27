@@ -6,7 +6,7 @@ const Header = () => {
     <ContainerHeader>
       <a href="https://larepublica.pe/deportes/" target="_blank">
       <WrapperImage>
-        <Image src="/static/images/LOGO_FINAL.png"/>
+        <Image src="./static/images/LOGO_FINAL.png"/>
       </WrapperImage>
       </a>
     </ContainerHeader>

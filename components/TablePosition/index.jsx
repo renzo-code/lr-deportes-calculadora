@@ -13,7 +13,7 @@ const TablePosition = () => {
           <ClasificacionesMundial />
         </BlackOpta>
         <WrapperImage>
-          <ImageJugadores src="/static/images/jugadores.png" />
+          <ImageJugadores src="./static/images/jugadores.png" />
         </WrapperImage>
       </WrapperTable>
     </ContentTable>
