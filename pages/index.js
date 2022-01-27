@@ -6,8 +6,8 @@ import PortNews from "../components/PortNews"
 import TablePosition from "../components/TablePosition"
 import ClasificationSA from "../components/Clasification-SD-WC"
 import Calculator from "../components/Calculator"
-import EstadisticasSAWC from "../components/ClasificationWC-SA"
-import LastNews from "../components/LastNews"
+// import EstadisticasSAWC from "../components/ClasificationWC-SA"
+// import LastNews from "../components/LastNews"
 
 const Home = ({ goleadores }) => {
   // console.log('goleadores', goleadores)

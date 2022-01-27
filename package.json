@@ -18,7 +18,7 @@
     "fetch": "^1.1.0",
     "isomorphic-unfetch": "^3.1.0",
     "lodash": "^4.17.21",
-    "next": "10.2.3",
+    "next": "^12.0.8",
     "next-with-apollo": "^5.1.1",
     "ramda": "^0.27.1",
     "react": "17.0.2",

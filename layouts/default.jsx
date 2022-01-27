@@ -2,6 +2,7 @@ import React from 'react'
 
 import NextHead from 'next/head'
 import Header from '../components/Header'
+import OptaComp from '../components/Opta'
 
 import styled from 'styled-components'
 
@@ -16,6 +17,11 @@ const Layout = (props) => {
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet"/>
+
+        {/* Metadatos Opta */}
+        <script src="https://secure.widget.cloud.opta.net/2.0/js/widgets.opta.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="https://secure.widget.cloud.opta.net/2.0/css/widgets.opta.css" type="text/css" />
+        <OptaComp/>
 
         {/* Metadatos Facebook */}
         <meta property="fb:pages" content="94604237016" />

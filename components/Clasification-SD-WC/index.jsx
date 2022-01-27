@@ -1,36 +1,27 @@
 import React from 'react'
 
-import styled from 'styled-components' 
-import Head from 'next/head'
-import OptaComp from '../Opta'
+import styled from 'styled-components'
 import ProximoPartido from './ProxPartido'
 
 const ClasificationSA = () => {
   return (
-    <>
-      <Head>
-        <script src="https://secure.widget.cloud.opta.net/2.0/js/widgets.opta.js" type="text/javascript"></script>
-        <link rel="stylesheet" href="https://secure.widget.cloud.opta.net/2.0/css/widgets.opta.css" type="text/css" />
-        <OptaComp/>
-      </Head>
-      <ContainerComponent>
-        <WrapperTitle>
+    <ContainerComponent>
+      <WrapperTitle>
         <Title>
           Próximos partidos de las Eliminatorias a Qatar 2022
         </Title>
-        </WrapperTitle>
-        <Bajada>
-          ¿Qué partidos faltan, cuáles fueron los resultados anteriores 
-          y en qué mes se disputarán las últimas fechas? Todos 
-          los detalles aquí.
-        </Bajada>
-        <ContentScroll>
-          <BlackOpta>
-            <ProximoPartido/>
-          </BlackOpta>
-        </ContentScroll>
-      </ContainerComponent>
-    </>
+      </WrapperTitle>
+      <Bajada>
+        ¿Qué partidos faltan, cuáles fueron los resultados anteriores
+        y en qué mes se disputarán las últimas fechas? Todos
+        los detalles aquí.
+      </Bajada>
+      <ContentScroll>
+        <BlackOpta>
+          <ProximoPartido />
+        </BlackOpta>
+      </ContentScroll>
+    </ContainerComponent>
   )
 }
 

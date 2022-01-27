@@ -1,31 +1,22 @@
 import React from 'react'
 import styled from 'styled-components'
-import Head from 'next/head'
-import OptaComp from '../Opta'
 import ClasificacionesMundial from '../Estadistica/ClasificacionMundial'
 
 const TablePosition = () => {
   return (
-    <>
-      <Head>
-        <script src="https://secure.widget.cloud.opta.net/2.0/js/widgets.opta.js" type="text/javascript"></script>
-        <link rel="stylesheet" href="https://secure.widget.cloud.opta.net/2.0/css/widgets.opta.css" type="text/css" />
-        <OptaComp/>
-      </Head>
-      <ContentTable>
-        <WrapperTitle>
-          <Title>Tabla de posiciones EN VIVO rumbo a Qatar 2022</Title>
-        </WrapperTitle>
-        <WrapperTable>
-          <BlackOpta>
-            <ClasificacionesMundial/>
-          </BlackOpta>
-          <WrapperImage>
-            <ImageJugadores src="/static/images/jugadores.png" />
-          </WrapperImage>
-        </WrapperTable>
-      </ContentTable>
-    </>
+    <ContentTable>
+      <WrapperTitle>
+        <Title>Tabla de posiciones EN VIVO rumbo a Qatar 2022</Title>
+      </WrapperTitle>
+      <WrapperTable>
+        <BlackOpta>
+          <ClasificacionesMundial />
+        </BlackOpta>
+        <WrapperImage>
+          <ImageJugadores src="/static/images/jugadores.png" />
+        </WrapperImage>
+      </WrapperTable>
+    </ContentTable>
   )
 }
 
